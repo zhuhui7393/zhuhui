@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>demo1</title>
+	</head>
+	<style>
+		html,body {
+			height: 100%;
+		}
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: sans-serif;
+		}
+		.wrapper {
+			display: flex;
+			flex-direction: column;
+			height: 100%;
+		}
+		.wrapper .header {
+			height: 60px;
+			background: #000;
+		}
+		.wrapper .page {
+			margin: 10px;
+			display: flex;
+			flex-direction: row;
+			height: 100%;
+			border: 1px solid #ccc;
+		}
+		.wrapper .page .asider {
+			flex: 0 0 250px;
+			height: 100%;
+			border-right: 1px solid #ccc;
+			overflow-y: auto;
+		}
+		.wrapper .page .content {
+			flex: 1;
+			display: flex;
+			flex-direction: column;
+			padding: 5px;
+			/*justify-content: center;*/
+			/*align-items: center;*/
+		}
+		.content .title {
+			flex: 0 120px;
+		}
+		.title .text {
+			margin: 10px;
+			padding: 5px 10px;
+			width: 600px;
+			border: 1px dashed chocolate;
+		}
+		.content .pic {
+			flex: 1;
+		}
+		.content span {
+			display: inline-block;
+		}
+		.content span:first-child {
+			padding-right: 20px;
+			font-size: 24px;
+			color: brown;
+			
+		}
+	</style>
+	<body>
+		<div class="wrapper">
+			<div class="header"></div>
+			<div class="page">
+				<div class="asider"></div>
+				<div class="content">
+					<div class='title'>
+						<span>Wecome to this station:</span><span class="userName">朱辉</span>
+						<div class="text">
+							我知道我很温柔，从来不打扰你<br />
+							我也知道我很无奈，从来不说心里要说得话<br />
+							你从来不说你心里要说的话   【泰戈尔】
+						</div>
+					</div>
+					<div class="pic">
+						<img src="./images/e26dc71187dbd2a643569e047d3872ef.jpg">
+						<p><input type="button" name="btn" id="btn" value="换一张" /></p>
+						<p><input type="button" name="btn" id="btn1" value="换个名字" /></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="./scripts/main.js"></script>
+</html>
